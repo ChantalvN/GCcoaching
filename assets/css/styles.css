@@ -3,7 +3,7 @@ background-color: #cbfff5
 background-white:#FCFCFC
 hover-color:#30cfad
 Font-color:#343434
-text-color: #E8F1F5
+
 
 font-family: 'Poppins', sans-serif;
 font-family: 'Roboto', sans-serif;
@@ -13,7 +13,7 @@ font-family: 'Short Stack', cursive;
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&family=Short+Stack&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&family=Roboto&family=Short+Stack&display=swap');
 
 body {
   font-family: "Roboto", sans-serif;
@@ -47,7 +47,7 @@ p {
 # sections
 --------------------------------------------------------------*/
 .white-section {
-  padding: 2% 0;
+  padding-bottom: 2%;
 }
 
 .light-color-section {
@@ -57,25 +57,24 @@ p {
 }
 
 .colored-section {
+  padding-bottom: 2%;
   background: #69f0e2 !important;
 }
 
 .dark-color-section {
   background: #081d17;
   color: #69f0e2;
-  font-size: 1rem;
   padding: 30px 0;
 }
 
 .section-header {
-  padding: 15px 0 0;
+  padding: 3% 0;
 }
 
 .section-h2 {
   font-size: 2.5rem;
   text-align: center;
   font-weight: 600;
-  margin-bottom: 20px;
 }
 
 .section-h3 {
@@ -95,18 +94,20 @@ p {
 .navbar-brand {
   font-family: "Short Stack", cursive;
   font-size: 2.5rem;
-  font-weight: 700;
-  letter-spacing: 2px;
+  font-weight: bold;
+  letter-spacing: 0.3rem;
   text-transform: uppercase;
 }
 
 .nav-link {
-  font-size: 0.9rem;
+  font-family: 'Poppins', sans-serif;
   color: #343434 !important;
 }
+
 .offcanvas-title {
-  font-weight: 700;
+  font-weight: 600;
 }
+
 .navbar-toggler {
   border: none;
 }
@@ -115,7 +116,7 @@ p {
   font-size: 1rem;
 }
 
-.menu{
+.menu {
   background-color: #69f0e2 !important;
 }
 
@@ -173,32 +174,28 @@ p {
 
 .icon-font {
   color: #69f0e2;
-  margin: 0 10px 10px;
-  font-size: 1rem;
+  margin: 0 15px;
 }
 
 /*--------------------------------------------------------------
-# COACHING 
+# ERKENNING
 --------------------------------------------------------------*/
-.coaching {
-  padding-bottom: 4%;
+.logo {
+  max-width: 75px;
+  max-height: 85px;
 }
 
 /*--------------------------------------------------------------
 # VOOR WIE 
 --------------------------------------------------------------*/
 #voor-wie .section-h5 {
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    font-size: 1rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
 }
 
-.voor-wie {
-  padding-bottom: 10px;
-}
 .icon-font-wie {
   padding: 0 15px;
-  font-size: 1.2rem;
   color: #69f0e2;
 }
 
@@ -330,7 +327,7 @@ p {
 }
 
 .footer-info a {
-  color: #eeeeee !important;
+  color: #FCFCFC !important;
 }
 
 ul {
@@ -340,7 +337,7 @@ ul {
 }
 
 ul a {
-  color: #eeeeee !important;
+  color: #FCFCFC !important;
   line-height: 2;
   font-size: 0.9rem;
 }
@@ -348,7 +345,7 @@ ul a {
 .credits {
   padding: 15px 0 0;
   text-align: center;
-  letter-spacing: 4px;
+  letter-spacing: 0.4rem;
   font-size: 0.6rem;
 }
 
@@ -377,8 +374,8 @@ ul a {
 @media (max-width: 281.98px) {
   h1 {
     font-size: 0.8rem !important;
-    font-weight: 300;
   }
+
   .button-p {
     visibility: hidden !important;
   }
@@ -386,12 +383,19 @@ ul a {
   .carousel-caption {
     padding: 95px 8px !important;
   }
+
   .section-h5 {
     margin: 0;
     font-size: 0.8rem !important;
   }
+
+  .logo {
+    max-width: 40px;
+    max-height: 60px;
+  }
+
   .credits {
-    letter-spacing: 3px;
+    letter-spacing: 0.2rem;
     font-size: 0.5rem;
   }
 }
@@ -403,6 +407,7 @@ ul a {
   #btn-back-to-top {
     font-size: 1.4rem;
   }
+
   p,
   .section-h3 {
     font-size: 0.8rem;
@@ -419,13 +424,12 @@ ul a {
   }
 
   .icon-font {
-    margin: 0 10px 10px;
-    font-size: 0.6rem;
+    margin: 0 15px 10px;
   }
 
-  .icon-font-wie {
-    padding: 3px 10px 10px;
-    font-size: 1rem;
+  .logo {
+    max-width: 50px;
+    max-height: 70px;
   }
 
   /*__________ # NAVBAR __________*/
@@ -442,7 +446,6 @@ ul a {
 
   .welkom-tekst {
     font-size: 1rem;
-    font-weight: bold;
     line-height: 0.2;
   }
 
@@ -458,7 +461,6 @@ ul a {
     height: auto;
     border-radius: 100px 15px;
   }
-  
 
   /*__________# FOOTER SECTION __________*/
   #footer .section-h4 {
@@ -475,11 +477,13 @@ ul a {
   }
 }
 
+
+
 @media (min-width: 576px) {
-  .welkom-tekst  {
-    font-size: 1.6rem;
-    font-weight: bold;
-    line-height: 1.6;
+  .welkom-tekst {
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1.5;
   }
 
   /*__________# HERO SECTION __________*/
@@ -491,19 +495,21 @@ ul a {
   p.intro-tekst {
     font-size: 0.9rem;
     line-height: 1.5;
-    letter-spacing: 0.04rem;
+    letter-spacing: 0.05rem;
   }
 }
 
+
 @media (min-width: 991.98px) {
   .welkom-tekst {
-    font-size: 2.0rem;
-    font-weight: bold;
-    line-height: 1.8;
+    font-size: 2.5rem;
+    font-weight: 600;
+    line-height: 2;
   }
 
-  p.intro-tekst  {
+  p.intro-tekst {
+    font-size: 1.2rem;
     line-height: 1.6;
-    letter-spacing: 0.05rem;
+    letter-spacing: 0.07rem;
   }
 }
